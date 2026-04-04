@@ -80,21 +80,100 @@
         <h2>Featured Cases</h2>
         <p class="section-intro">Trusted by leading organizations across industries</p>
         <div class="case-grid">
-            <div class="case-item">
-                <h3>🤝 China Unicom Yuanjing Large Model Partnership</h3>
-                <p>Jointly dedicated to advancing the Chinese Cultural Creative Communication Project with China Unicom AI Innovation Center, leveraging the Yuanjing Large Model for creative transformation of traditional culture.</p>
+            <div class="case-item" onclick="toggleCase(this)">
+                <h3>🤝 China Unicom Yuanjing Large Model Partnership <span class="expand-icon">▼</span></h3>
+                <p class="case-summary">Jointly advancing the Chinese Cultural Creative Communication Project with China Unicom AI Innovation Center.</p>
+                <div class="case-details">
+                    <div class="detail-section">
+                        <h4>Project Overview</h4>
+                        <p>Strategic partnership with China Unicom AI Innovation Center to leverage the Yuanjing Large Model for creative transformation of traditional culture, advancing the Chinese Cultural Creative Communication Project.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Key Deliverables</h4>
+                        <ul>
+                            <li>Large model-based content generation pipeline</li>
+                            <li>Cultural heritage digitalization framework</li>
+                            <li>AI-powered creative content production</li>
+                            <li>Cross-platform content distribution system</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Technologies</h4>
+                        <p>Yuanjing Large Model, Multi-modal AI, NLP, Computer Vision</p>
+                    </div>
+                </div>
             </div>
-            <div class="case-item">
-                <h3>🎭 Ma Wang Dui Han Dynasty Immersive Exhibition</h3>
-                <p>"The Art of Life" — cutting-edge digital technologies narrate captivating stories of Han Dynasty culture, offering visitors dual-line immersive experiences through light and shadow interplay.</p>
+            <div class="case-item" onclick="toggleCase(this)">
+                <h3>🎭 Ma Wang Dui Han Dynasty Immersive Exhibition <span class="expand-icon">▼</span></h3>
+                <p class="case-summary">"The Art of Life" — cutting-edge digital technologies narrate captivating stories of Han Dynasty culture.</p>
+                <div class="case-details">
+                    <div class="detail-section">
+                        <h4>Project Overview</h4>
+                        <p>Immersive multimedia exhibition at Ma Wang Dui Han Culture Museum, utilizing cutting-edge digital technologies to narrate the captivating stories of Han Dynasty culture through light and shadow interplay.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Key Deliverables</h4>
+                        <ul>
+                            <li>360° immersive projection mapping</li>
+                            <li>Interactive AR experiences</li>
+                            <li>AI-guided virtual docent system</li>
+                            <li>Digital artifact restoration</li>
+                            <li>Multi-sensory exhibition design</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Technologies</h4>
+                        <p>Projection Mapping, AR/VR, AI Content Generation, Motion Capture, Spatial Audio</p>
+                    </div>
+                </div>
             </div>
-            <div class="case-item">
-                <h3>🌐 Meta Oriental Sports — Virtual-Real Integration</h3>
-                <p>Pioneering Web 2.0 + Web 3.0 integration for the Qiantan Corporate Triathlon Event, featuring live streaming, dual-channel incentives, virtual sports equipment, and digital medal awards.</p>
+            <div class="case-item" onclick="toggleCase(this)">
+                <h3>🌐 Meta Oriental Sports — Virtual-Real Integration <span class="expand-icon">▼</span></h3>
+                <p class="case-summary">Pioneering Web 2.0 + Web 3.0 integration for the Qiantan Corporate Triathlon Event.</p>
+                <div class="case-details">
+                    <div class="detail-section">
+                        <h4>Project Overview</h4>
+                        <p>Groundbreaking integration of Web 2.0 and Web 3.0 technologies for the Qiantan Corporate Triathlon Event, featuring live streaming, dual-channel incentives, virtual sports equipment, and digital medal awards.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Key Deliverables</h4>
+                        <ul>
+                            <li>Live streaming platform</li>
+                            <li>Digital twin race course</li>
+                            <li>Virtual equipment NFTs</li>
+                            <li>Digital medal system</li>
+                            <li>Dual-channel reward mechanism</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Technologies</h4>
+                        <p>Web3, Blockchain, NFT, Digital Twin, Live Streaming</p>
+                    </div>
+                </div>
             </div>
-            <div class="case-item">
-                <h3>📢 Chinese Cultural Creative Communication Project</h3>
-                <p>Partnership with China International Communication Group to promote creative transformation of China's outstanding traditional culture through the "Chinese Artifact Spirits" IP.</p>
+            <div class="case-item" onclick="toggleCase(this)">
+                <h3>📢 Chinese Cultural Creative Communication Project <span class="expand-icon">▼</span></h3>
+                <p class="case-summary">Partnership with China International Communication Group to promote creative transformation of China's outstanding traditional culture.</p>
+                <div class="case-details">
+                    <div class="detail-section">
+                        <h4>Project Overview</h4>
+                        <p>Strategic partnership with China International Communication Group (CICG) Cultural Exchange Center to promote creative transformation and innovative development of China's outstanding traditional culture through the "Chinese Artifact Spirits" unique IP.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Key Deliverables</h4>
+                        <ul>
+                            <li>"Chinese Artifact Spirits" IP development</li>
+                            <li>Multi-language content production</li>
+                            <li>Cross-cultural storytelling framework</li>
+                            <li>International distribution network</li>
+                            <li>Digital cultural heritage platform</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Technologies</h4>
+                        <p>AI Translation, Content Generation, Digital Asset Management</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -149,5 +228,11 @@
             <p class="footer-tagline">Sky Dream Works — Changing every frame you see.</p>
         </div>
     </footer>
+    
+    <script>
+    function toggleCase(element) {
+        element.classList.toggle('expanded');
+    }
+    </script>
 </body>
 </html>

@@ -243,18 +243,94 @@ h2 {
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.case-item:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    background: rgba(255,255,255,0.08);
 }
 
 .case-item h3 {
     font-size: 1rem;
     margin-bottom: 0.8rem;
     color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
-.case-item p {
+.expand-icon {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+.case-item.expanded .expand-icon {
+    transform: rotate(180deg);
+}
+
+.case-summary {
     font-size: 0.85rem;
     color: rgba(255,255,255,0.8);
     line-height: 1.6;
+}
+
+.case-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.case-item.expanded .case-details {
+    max-height: 800px;
+    padding-top: 1rem;
+    opacity: 1;
+}
+
+.detail-section {
+    margin-bottom: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.detail-section:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.detail-section h4 {
+    font-size: 0.85rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail-section p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+}
+
+.detail-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-section ul li {
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.75);
+}
+
+.detail-section ul li::before {
+    content: '▸ ';
+    color: var(--primary);
 }
 
 /* About */
@@ -478,10 +554,19 @@ footer {
     }
     
     .case-item h3 {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
     
-    .case-item p {
+    .case-summary {
+        font-size: 0.95rem;
+    }
+    
+    .detail-section h4 {
+        font-size: 0.9rem;
+    }
+    
+    .detail-section p,
+    .detail-section ul li {
         font-size: 0.95rem;
     }
     
