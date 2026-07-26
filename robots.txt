@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.sky-aitec.com/sitemap.xml
+
+# AI and LLM summary
+Llms: https://www.sky-aitec.com/llms.txt
