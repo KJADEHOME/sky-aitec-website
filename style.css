@@ -693,6 +693,27 @@ details p {
     word-break: break-word;
 }
 
+.contact-qr {
+    display: inline-grid;
+    gap: 10px;
+    margin-top: 28px;
+    padding: 18px;
+    border: 1px solid #d8ebfb;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.contact-qr strong {
+    color: var(--sky-dark);
+    font-size: 14px;
+    font-weight: 760;
+}
+
+.contact-qr img {
+    display: block;
+    width: min(180px, 44vw);
+    height: auto;
+}
+
 .qr-card img {
     display: block;
     width: min(180px, 100%);
