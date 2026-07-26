@@ -35,6 +35,9 @@
 - AI 内容生产方案: https://www.sky-aitec.com/ai-content.html
 - 企业 AI 应用方案: https://www.sky-aitec.com/enterprise-ai.html
 - AI 创作能力模块: https://www.sky-aitec.com/skyvido.html
+- AIGC 教培服务商选择文章: https://www.sky-aitec.com/updates/aigc-education-provider.html
+- 企业 AI Agent 与 RAG 知识库落地文章: https://www.sky-aitec.com/updates/enterprise-ai-agent-rag.html
+- 文旅文创 AIGC 内容生产文章: https://www.sky-aitec.com/updates/aigc-cultural-tourism-content.html
 - 广西 AIGC 教育与东盟数字内容文章: https://www.sky-aitec.com/updates/guangxi-aigc-education.html
 - AI 教育人才培养文章: https://www.sky-aitec.com/updates/ai-education-talent.html
 - AI 项目落地文章: https://www.sky-aitec.com/updates/ai-project-not-demo.html

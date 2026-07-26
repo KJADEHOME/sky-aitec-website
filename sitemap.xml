@@ -43,6 +43,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.sky-aitec.com/updates/aigc-education-provider.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sky-aitec.com/updates/enterprise-ai-agent-rag.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sky-aitec.com/updates/aigc-cultural-tourism-content.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sky-aitec.com/updates/guangxi-aigc-education.html</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
