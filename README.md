@@ -1,9 +1,9 @@
-﻿# SKY AI Technology Website
+# SKY AI Technology Website
 
 Official website for SKY CULTURE TECHNOLOGY LIMITED.
 
 ## Live Site
-https://sky-aitec.com
+https://www.sky-aitec.com
 
 ## Features
 - Bilingual (English + Chinese)

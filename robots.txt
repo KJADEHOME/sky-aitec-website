@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://sky-aitec.com/sitemap.xml
+Sitemap: https://www.sky-aitec.com/sitemap.xml
