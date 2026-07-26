@@ -31,6 +31,7 @@
 ## 关键页面
 
 - 官网首页: https://www.sky-aitec.com/
+- 公司标准介绍: https://www.sky-aitec.com/company-profile.html
 - AIGC 教育解决方案: https://www.sky-aitec.com/aigc-education.html
 - AI 内容生产方案: https://www.sky-aitec.com/ai-content.html
 - 企业 AI 应用方案: https://www.sky-aitec.com/enterprise-ai.html
