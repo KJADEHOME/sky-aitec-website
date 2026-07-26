@@ -394,17 +394,70 @@
                 <p class="section-kicker">Contact</p>
                 <h2>业务合作咨询</h2>
                 <p>如果您正在规划AIGC教育、AI文娱内容生产、政企AI降本增效、AI Agent或RAG知识库项目，可以与香港天空文化科技有限公司联系。</p>
-            </div>
-            <div class="contact-grid contact-simple">
-                <div>
-                    <strong>业务邮箱</strong>
-                    <a href="mailto:bonnie@sky-aitec.com">bonnie@sky-aitec.com</a>
+                <div class="contact-side">
+                    <div>
+                        <strong>业务邮箱</strong>
+                        <a href="mailto:bonnie@sky-aitec.com">bonnie@sky-aitec.com</a>
+                    </div>
+                    <div class="qr-card">
+                        <strong>公众号</strong>
+                        <img src="images/wechat-qrcode.jpg" alt="香港天空文化科技有限公司公众号二维码">
+                    </div>
                 </div>
-                <div class="qr-card">
-                    <strong>公众号</strong>
-                    <img src="images/wechat-qrcode.jpg" alt="香港天空文化科技有限公司公众号二维码">
-                </div>
             </div>
+            <form class="inquiry-form" id="inquiry-form">
+                <div class="form-row">
+                    <label>
+                        <span>联系人 *</span>
+                        <input name="name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        <span>联系方式 *</span>
+                        <input name="contact" autocomplete="email" placeholder="邮箱、微信或手机" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <span>单位/机构</span>
+                        <input name="organization" autocomplete="organization">
+                    </label>
+                    <label>
+                        <span>需求方向 *</span>
+                        <select name="projectType" required>
+                            <option value="">请选择</option>
+                            <option>AIGC教育智能体</option>
+                            <option>院校/教培AI课程与实训</option>
+                            <option>AI内容生产与文旅文创</option>
+                            <option>企业AI Agent/RAG知识库</option>
+                            <option>政企AI降本增效</option>
+                            <option>面向东盟数字内容合作</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <span>项目阶段</span>
+                        <select name="stage">
+                            <option value="">请选择</option>
+                            <option>初步了解</option>
+                            <option>已有明确需求</option>
+                            <option>准备立项/招采</option>
+                            <option>已有系统需要升级</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>预算/时间</span>
+                        <input name="timeline" placeholder="例如：8月启动、先做试点">
+                    </label>
+                </div>
+                <label>
+                    <span>项目说明 *</span>
+                    <textarea name="message" rows="5" placeholder="请简单说明业务场景、目标、现有资料或希望解决的问题" required></textarea>
+                </label>
+                <input class="form-trap" name="company_website" tabindex="-1" autocomplete="off">
+                <button class="button primary form-submit" type="submit">提交业务咨询</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
         </section>
     </main>
 
@@ -412,5 +465,40 @@
         <p>© 2026 香港天空文化科技有限公司 SKY CULTURE TECHNOLOGY LIMITED</p>
         <p>依托AIGC实训能力模块，聚焦AIGC教育、AI文娱与政企AI降本增效的文化科技公司</p>
     </footer>
+    <script>
+      const inquiryForm = document.getElementById("inquiry-form");
+      const formStatus = document.getElementById("form-status");
+
+      if (inquiryForm) {
+        inquiryForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const submitButton = inquiryForm.querySelector("button[type='submit']");
+          const formData = Object.fromEntries(new FormData(inquiryForm).entries());
+
+          formStatus.textContent = "正在提交...";
+          submitButton.disabled = true;
+
+          try {
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+              throw new Error(result.error || "提交失败");
+            }
+
+            inquiryForm.reset();
+            formStatus.textContent = "已提交，我们会尽快与您联系。";
+          } catch (error) {
+            formStatus.textContent = "提交失败，请直接发送邮件至 bonnie@sky-aitec.com。";
+          } finally {
+            submitButton.disabled = false;
+          }
+        });
+      }
+    </script>
 </body>
 </html>
