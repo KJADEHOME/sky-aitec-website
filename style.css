@@ -803,6 +803,112 @@ details p {
     font-size: clamp(38px, 4.8vw, 64px);
 }
 
+.profile-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.62fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: end;
+    padding: clamp(54px, 7vw, 92px) clamp(22px, 5vw, 88px);
+    background:
+        linear-gradient(rgba(25, 166, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(25, 166, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(135deg, #f9fdff 0%, #eef9ff 100%);
+    background-size: 60px 60px, 60px 60px, auto;
+    border-bottom: 1px solid #d8ebfb;
+}
+
+.profile-heading h1 {
+    max-width: 900px;
+    margin: 20px 0 10px;
+    color: var(--navy);
+    font-family: var(--font-serif);
+    font-size: clamp(38px, 4.6vw, 72px);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.profile-heading > p:last-child {
+    color: var(--sky-dark);
+    font-size: clamp(20px, 2vw, 28px);
+    font-weight: 760;
+}
+
+.profile-summary {
+    border-top: 4px solid var(--sky);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.profile-summary p {
+    color: #41516a;
+    font-size: 18px;
+    line-height: 1.85;
+}
+
+.profile-section {
+    background: #fff;
+}
+
+.profile-body {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.profile-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    margin-bottom: 34px;
+}
+
+.profile-facts div {
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: #fbfeff;
+}
+
+.profile-facts span {
+    color: var(--sky-dark);
+    font-size: 14px;
+    font-weight: 760;
+}
+
+.profile-facts strong {
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.profile-body h2 {
+    margin: 34px 0 12px;
+    color: var(--navy);
+    font-family: var(--font-serif);
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.22;
+    font-weight: 700;
+}
+
+.profile-body p,
+.profile-body ul {
+    color: #41516a;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.profile-body p {
+    margin-top: 14px;
+}
+
+.profile-body ul {
+    margin: 16px 0 0 20px;
+}
+
 .detail-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -870,6 +976,7 @@ details p {
     }
 
     .hero,
+    .profile-hero,
     .contact,
     .team,
     .mission-band,
@@ -943,6 +1050,7 @@ details p {
     .at-a-glance div,
     .signal-list div,
     .detail-grid,
+    .profile-facts,
     .update-grid,
     .contact-grid,
     .contact-side,
