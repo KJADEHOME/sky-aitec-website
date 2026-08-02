@@ -714,6 +714,29 @@ details p {
     height: auto;
 }
 
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid #b8ddf6;
+    color: var(--navy);
+    background: #ffffff;
+    font-weight: 760;
+}
+
+.contact-links a:hover {
+    border-color: var(--sky);
+    color: var(--sky-dark);
+}
+
 .qr-card img {
     display: block;
     width: min(180px, 100%);
