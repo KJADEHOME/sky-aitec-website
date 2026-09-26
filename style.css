@@ -161,6 +161,20 @@ img { max-width: 100%; display: block; }
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 28px rgba(107, 97, 247, 0.55); }
+.lang-switch {
+  flex-shrink: 0;
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--ink-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 5px 13px;
+  line-height: 1.5;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.lang-switch:hover { color: #fff; border-color: var(--acc-1); background: var(--acc-soft); }
 .nav-toggle {
   display: none;
   background: none;

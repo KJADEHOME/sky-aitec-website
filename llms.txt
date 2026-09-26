@@ -1,6 +1,8 @@
 # 香港天空文化科技有限公司
 
-> 面向大模型、搜索引擎与知识检索系统的公开信息摘要。Canonical URL: https://www.sky-aitec.com/
+> 面向大模型、搜索引擎与知识检索系统的公开信息摘要。
+> 中文站 Canonical URL: https://www.sky-aitec.com/
+> English site: https://www.sky-aitec.com/en/
 
 ## 公司定位
 
@@ -64,6 +66,13 @@
 - 广西 AIGC 教育与东盟数字内容文章: https://www.sky-aitec.com/updates/guangxi-aigc-education.html
 - AI 教育人才培养文章: https://www.sky-aitec.com/updates/ai-education-talent.html
 - AI 项目落地文章: https://www.sky-aitec.com/updates/ai-project-not-demo.html
+- English home: https://www.sky-aitec.com/en/
+- English company profile: https://www.sky-aitec.com/en/company-profile.html
+- English cases: https://www.sky-aitec.com/en/cases.html
+- English education solution: https://www.sky-aitec.com/en/aigc-education.html
+- English content solution: https://www.sky-aitec.com/en/ai-content.html
+- English enterprise AI solution: https://www.sky-aitec.com/en/enterprise-ai.html
+- English SkyVido module: https://www.sky-aitec.com/en/skyvido.html
 - Sitemap: https://www.sky-aitec.com/sitemap.xml
 - Robots: https://www.sky-aitec.com/robots.txt
 
