@@ -811,8 +811,9 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
   gap: 60px;
-  align-items: center;
+  align-items: stretch;
 }
+.hero-media { display: flex; align-items: stretch; }
 .hero-grid .hero-inner { max-width: none; }
 .hero-grid h1 { font-size: clamp(2.4rem, 4.6vw, 4rem); margin: 22px 0; }
 .hero-grid .hero-meta { margin-top: 52px; gap: 36px; }
@@ -821,7 +822,9 @@ img { max-width: 100%; display: block; }
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  min-height: 348px;
   max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: #070a14;

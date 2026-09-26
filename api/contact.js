@@ -41,7 +41,7 @@ module.exports = async function handler(req, res) {
     const smtpPort = Number(process.env.SMTP_PORT || 465);
     const smtpUser = requiredEnv("SMTP_USER");
     const smtpPass = requiredEnv("SMTP_PASS");
-    const contactTo = process.env.CONTACT_TO || "bonnie@sky-aitec.com";
+    const contactTo = process.env.CONTACT_TO || "bonnie@kjadehome.com";
 
     const transporter = nodemailer.createTransport({
       host: smtpHost,
